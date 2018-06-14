@@ -1,0 +1,7 @@
+#event-aggregator {
+	display: flex-box;
+}
+
+#event-aggregator .linechart-container {
+	flex-basis: 50%;
+}
