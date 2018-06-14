@@ -1,4 +1,4 @@
-FROM node:carbon
+FROM node:carbon-alpine
 
 MAINTAINER Ujjawal Garg <ujjawal.1224@gmail.com>
 
