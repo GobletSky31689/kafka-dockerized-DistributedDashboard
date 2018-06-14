@@ -7,7 +7,12 @@ class Client {
 	bindEvents(message) {
 		console.log('binding events...');
 		this.eventAggregator.on('data', (message) => {
-			this.socket.send(message)
+			if(this.socket.readyState == this.socket.OPEN){
+				this.socket.send(message, function(error) {
+					if(error)
+    					console.log(error);
+				});
+			}
 		});
 	}
 }

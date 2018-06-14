@@ -37,14 +37,14 @@ app.get('/login', (req, res) => {
 });
 
 // For the nodes we would be monitoring
-app.get('/logout', (req, res) => {
-	res.send('Hello World');
-});
+// app.get('/logout', (req, res) => {
+// 	res.send('Hello World');
+// });
 
 
-app.get('/test', (req, res) => {
-	res.send("You found me :-)");
-})
+// app.get('/test', (req, res) => {
+// 	res.send("You found me :-)");
+// })
 
 //for the web clients
 app.ws('/connect', (socket, req) => {
