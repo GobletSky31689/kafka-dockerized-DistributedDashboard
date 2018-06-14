@@ -1,5 +1,5 @@
 
-const server = "10.0.0.19",
+const server = "35.230.65.192",
 	zookeeperPort = 2181,
 	brokerPort = 9092,
 	nodeTopic = "input",

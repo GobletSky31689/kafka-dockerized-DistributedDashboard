@@ -75,7 +75,7 @@ CONTAINER_ALREADY_STARTED="CONTAINER_ALREADY_STARTED_PLACEHOLDER"
 if [ ! -e $CONTAINER_ALREADY_STARTED ]; then
     echo "-- First container startup --"
     # echo -en "\n\n advertised.host.name=$(hostname --ip-address) \n ">> $KAFKA_HOME/config/server.properties
-    echo "\n advertised.listeners=PLAINTEXT://10.0.0.19:9092" >> $KAFKA_HOME/config/server.properties
+    echo "\n advertised.listeners=PLAINTEXT://35.230.65.192:9092" >> $KAFKA_HOME/config/server.properties
     tail -n 3 $KAFKA_HOME/config/server.properties
     $KAFKA_HOME/bin/kafka-server-start.sh $KAFKA_HOME/config/server.properties > /dev/null 2>&1 &
     sleep 10
