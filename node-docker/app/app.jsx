@@ -16,7 +16,7 @@ class App {
 		// create a ws connection to the server
 		this.$eventAggregator = $("#event-aggregator");
 
-		this.socket = new WebSocket('ws://' + window.location.host + '/connect');
+		this.socket = new WebSocket('wss://' + window.location.host + '/connect');
 
 		this.socket.onmessage = this.onUpdate.bind(this);
 	}
