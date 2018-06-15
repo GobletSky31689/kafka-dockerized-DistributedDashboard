@@ -35,7 +35,7 @@ RUN cd /opt && ln -s spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION} s
 # Spark config
 ENV SPARK_HOME /opt/spark
 ENV PYTHONPATH $SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-0.10.6-src.zip
-ENV SPARK_OPTS --driver-java-options=-Xms1024M --driver-java-options=-Xmx4096M --driver-java-options=-Dlog4j.logLevel=info
+ENV SPARK_OPTS --driver-java-options=-Xms512M --driver-java-options=-Xmx2048M --driver-java-options=-Dlog4j.logLevel=info
 
 RUN pip install kafka-python
 
