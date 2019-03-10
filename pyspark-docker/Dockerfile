@@ -5,7 +5,7 @@ MAINTAINER Ujjawal Garg <ujjawal.1224@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 # Spark dependencies
-ENV APACHE_SPARK_VERSION 2.3.0
+ENV APACHE_SPARK_VERSION 2.4.0
 ENV HADOOP_VERSION 2.7
 
 RUN apt-get -y update \

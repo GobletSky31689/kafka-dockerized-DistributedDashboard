@@ -6,7 +6,7 @@ MAINTAINER Ujjawal Garg <ujjawal.1224@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV SCALA_VERSION 2.11
-ENV KAFKA_VERSION 1.0.1
+ENV KAFKA_VERSION 1.0.2
 ENV KAFKA_HOME /opt/kafka_"$SCALA_VERSION"-"$KAFKA_VERSION"
 
 # Install Kafka, Zookeeper and other needed things
